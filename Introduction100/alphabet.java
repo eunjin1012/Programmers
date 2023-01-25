@@ -4,14 +4,11 @@ class Solution {
         for(int i=0; i<my_string.length(); i++){
             char ch = my_string.charAt(i);
             if(Character.isLowerCase(ch)){
-                ch = Character.toUpperCase(ch);
-                answer+=ch;
+                answer+=Character.toUpperCase(ch);
             }
             else if(Character.isUpperCase(ch)){
-                ch = Character.toLowerCase(ch);
-                answer+=ch;
+                answer+=Character.toLowerCase(ch);
             }
-            
         }
         return answer;
     }
