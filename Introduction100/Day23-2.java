@@ -4,7 +4,7 @@ class Solution {
         String[] word = {"aya", "ye", "woo", "ma"};
         for(int i=0; i<babbling.length; i++){
             for(int j=0; j<word.length; j++){
-                while(babbling[i].contains(word[j])){
+                if(babbling[i].contains(word[j])){
                     babbling[i] = babbling[i].replace(word[j], " ");
                     if(babbling[i].trim().length()==0){
                         answer++;
